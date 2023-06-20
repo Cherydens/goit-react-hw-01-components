@@ -1,22 +1,23 @@
-.statistics {
+import styled from '@emotion/styled';
+import { getRandomHexColor } from 'utils/getRandomHexColor';
+
+export const Section = styled.section`
   display: flex;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  width: 320px;
+  width: 100%;
   border: 1px solid black;
-}
-.title {
+`;
+export const Title = styled.h2`
   color: gray;
   text-align: center;
   text-transform: uppercase;
   padding-top: 24px;
   padding-bottom: 24px;
-}
-.statList {
+`;
+export const List = styled.ul`
   display: flex;
-}
-.item {
+`;
+export const Item = styled.li`
   display: flex;
   flex-direction: column;
   flex-basis: calc(100% / 4);
@@ -24,12 +25,13 @@
   padding-bottom: 12px;
   text-align: center;
   outline: 0.5px solid gray;
-}
-.label {
+  background-color: ${() => getRandomHexColor()};
+`;
+export const Label = styled.span`
   color: white;
   margin-bottom: 6px;
-}
-.percentage {
+`;
+export const Percentage = styled.span`
   color: white;
   font-size: 18px;
-}
+`;

@@ -1,4 +1,6 @@
-.item {
+import styled from '@emotion/styled';
+
+export const Card = styled.li`
   display: flex;
   align-items: center;
   gap: 12px;
@@ -8,26 +10,23 @@
   padding-right: 12px;
   border-radius: 5px;
   height: 80px;
-
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-.status {
+`;
+
+export const Status = styled.span`
   width: 16px;
   height: 16px;
   border-radius: 50%;
-}
-.online {
-  background-color: green;
-}
-.offline {
-  background-color: red;
-}
-.avatar {
+  background-color: ${({ isOnline }) => (isOnline ? 'green' : 'red')};
+`;
+
+export const Avatar = styled.img`
   width: 48px;
   height: 48px;
   border-radius: 4px;
-}
-.name {
+`;
+
+export const Name = styled.p`
   font-weight: 500;
   font-size: 24px;
-}
+`;

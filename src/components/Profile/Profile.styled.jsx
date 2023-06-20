@@ -1,47 +1,44 @@
-.profile {
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 320px;
+import styled from '@emotion/styled';
+
+export const Card = styled.div`
+  width: 100%;
   border-radius: 5px;
   border: 1px solid black;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-.description {
+`;
+export const Description = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-}
-.avatar {
+`;
+export const Avatar = styled.img`
   width: 120px;
   height: 120px;
   border-radius: 50%;
   margin-bottom: 20px;
   overflow: hidden;
   background-color: cadetblue;
-}
-.name {
+`;
+export const Name = styled.p`
   font-weight: 700;
   font-size: 28px;
   margin-bottom: 12px;
-}
-.tag {
+`;
+export const Tag = styled.p`
   color: gray;
   margin-bottom: 12px;
-}
-.location {
+`;
+export const Location = styled.p`
   color: gray;
-}
-.stats {
+`;
+export const StatsContainer = styled.ul`
   display: flex;
   align-items: center;
   width: 100%;
-}
-.stats li {
+`;
+export const Stats = styled.li`
   display: flex;
   flex-direction: column;
   flex-basis: calc(100% / 3);
@@ -49,12 +46,11 @@
   padding: 20px;
   background-color: gainsboro;
   outline: 0.5px solid gray;
-}
-
-.label {
+`;
+export const Label = styled.span`
   margin-bottom: 4px;
   color: gray;
-}
-.quantity {
+`;
+export const Quantity = styled.span`
   font-weight: 700;
-}
+`;
