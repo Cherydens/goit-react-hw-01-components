@@ -9,4 +9,5 @@ export const Container = styled.div`
   width: 320px;
   gap: 24px;
   padding-top: 24px;
+  padding-bottom: 24px;
 `;

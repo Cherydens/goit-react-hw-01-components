@@ -10,16 +10,16 @@ export const TableHeadItem = styled.th`
 `;
 export const TD = styled.td`
   padding: 10px 0;
-  :nth-of-type(3n-2) {
+  &:nth-of-type(3n-2) {
     text-transform: capitalize;
     padding-left: 20px;
   }
-  :nth-of-type(2n) {
+  &:nth-of-type(2n) {
     text-transform: capitalize;
     padding-right: 20px;
     text-align: right;
   }
-  :nth-of-type(3n) {
+  &:nth-of-type(3n) {
     text-align: center;
   }
 `;
